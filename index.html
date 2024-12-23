@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" sizes="32x32" href="/assets/recorder.png">
+  <link rel="stylesheet" href="https://lukiiy.netlify.app/default/style.css">
+  <link rel="stylesheet" href="https://lukiiy.netlify.app/default/main.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="author" href="Lukiiy">
+  <meta name="description" content="Just a screen recorder">
+  <title>Screen Recorder</title>
+</head>
+<body>
+  <noscript>⛔ JavaScript is disabled.</noscript>
+  <main>
+    <img src="/assets/recorder.png" style="display: inline;">
+    <h3>Screen Recorder</h3>
+  
+    <p>General</p>
+    <section>
+      <p>Cursor:</p>
+      <input type="checkbox" class="switch" id="cursor-vis" checked>
+      <label for="cursor-vis" class="switch"></label>
+    </section>
+    <section>
+      <p>Microphone:</p>
+      <input type="checkbox" class="switch" id="phone">
+      <label for="phone" class="switch"></label>
+    </section>
+
+    <p>Advanced</p>
+    <section>
+      <p>FPS:</p>
+      <input type="number" id="fps" inputmode="numeric" value="60" min="4" max="240" class="numI">
+    </section>
+    <section>
+      <p>Bitrate:</p>
+      <input type="number" id="bitrate" inputmode="numeric" value="8000" min="2500" max="45000" class="numI">
+    </section>
+  
+    <button id="record" onclick="recorder();">Record</button>
+  
+    <!-- <video src="" width="0" height="0" id="preview" controls></video> -->
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
